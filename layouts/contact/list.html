@@ -60,7 +60,10 @@
           {{ $social := .Site.Params.social }}
 						{{ range $social }}
 						<li class="d-inline-block mx-2"><a class="text-primary" target="_blank" href="{{ .url }}"><i
-									class="fa {{ .icon }}" style="font-size:35px"></i> {{ .url }} </a>
+									class="fa {{ .icon }}" style="font-size:30px"></i>
+                <font style="font-size:22px">{{ .lbl }}</font>
+                <!--{{ .lbl }}-->
+              </a>
 						</li>
             </br>
 					{{ end }}
@@ -73,8 +76,7 @@
           -->
         </div>
       </div>
-      <!--
-      <div class="col-lg-4">
+      <div class="col-lg-6">
         <div class="contact__info_item">
           <div class="contact__info_item-icon">
             <div class="icon-background">
@@ -85,18 +87,20 @@
               </svg>
             </div>
             <div class="icon">
-              <img src="{{ "images/contact/phone.svg" | absURL }}" alt="phone" />
+              <img src="{{ "images/contact/email-time.svg" | absURL }}" alt="email"/>
             </div>
           </div>
-          <h4>Phone & Email</h4>
-          <p>{{ $address.phone }}<br>
+          <h3>Email and Working Hours</h3>
+          <p>
             <a href="mailto:{{ $address.email }}">{{ $address.email }}</a>
+            <br>
+            {{ $address.openingHours }}
           </p>
 
         </div>
       </div>
-      -->
-      <div class="col-lg-6">
+      <!--
+      <div class="col-lg-3">
         <div class="contact__info_item">
           <div class="contact__info_item-icon">
             <div class="icon-background">
@@ -116,6 +120,7 @@
           </p>
         </div>
       </div>
+      -->
     </div>
   </div>
 </section>
