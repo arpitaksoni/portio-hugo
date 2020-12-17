@@ -1,6 +1,7 @@
 {{ with .Site.Data.skillSection }}
 {{ if .enable }}
 <section class="section skill">
+  <!--
     <div class="skill__background_shape">
         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 600 600">
             <defs>
@@ -15,6 +16,7 @@
             </g>
         </svg>
     </div>
+    -->
     <div class="skill__background_pattern">
         <img src="images/service/background-pattern.svg" alt="background-shape">
     </div>
@@ -38,7 +40,7 @@
             <div class="col-lg-6">
                 <div class="skill__progress">
                     <div class="skill__progress_heading mb-5">
-                        <span class="top-title pre-line">{{ .topTitle }}</span>
+                        <span class="top-title">{{ .topTitle }}</span>
                         {{ .content | markdownify }}
                     </div>
                     {{ $section := .skill }}
