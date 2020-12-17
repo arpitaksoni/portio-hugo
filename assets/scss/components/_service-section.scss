@@ -43,8 +43,8 @@
             border-radius: 20px;
             background: $white;
             &-icon {
-                height: 110px;
-                width: 125px;
+                height: 75px;
+                width: 90px;
                 position: relative;
                 .icon-background {
                     position: absolute;
@@ -60,7 +60,14 @@
             }
         }
         .slick-list {
-            overflow: visible;
+            overflow: hidden;
+            margin: 0;
+            padding: 0;
+            .dragging
+            {
+                cursor: pointer;
+                cursor: hand;
+            }
         }
         .slick-dots {
             display: flex;
