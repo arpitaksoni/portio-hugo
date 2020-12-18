@@ -7,8 +7,6 @@
         <h3 class="breadCrumb__title">{{ .Title }}</h3>
         <nav aria-label="breadcrumb" class="d-flex justify-content-center">
           <ol class="breadcrumb align-items-center">
-            <li class="breadcrumb-item"><a href={{ .Site.BaseURL }}>Home</a></li>
-            <li class="breadcrumb-item"><a href={{ .Site.Params.blogPageURL | absURL }}>All Post</a></li>
             <li class="breadcrumb-item active" aria-current="page">{{ .Title }}</li>
           </ol>
         </nav>
@@ -17,7 +15,7 @@
   </div>
 </header>
 
-<section class="section singleBlog">
+<section class="section singleService">
   <div class="svg-img">
       <img src={{ "images/hero/figure-svg.svg" | absURL }} alt="">
   </div>
@@ -42,14 +40,16 @@
   <div class="container">
       <div class="row">
           <div class="col-lg-12">
-              <div class="singleBlog__feature">
+            <!--
+              <div class="singleService__feature">
                   <img src={{ .Params.postImage | absURL }} alt="feature-image">
               </div>
+            -->
           </div>
       </div>
       <div class="row mt-5">
           <div class="col-lg-12">
-              <div class="singleBlog__content">
+              <div class="singleService__content">
                   {{ .Content }}
               </div>
           </div>

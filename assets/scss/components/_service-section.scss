@@ -58,6 +58,28 @@
                     z-index: 1;
                 }
             }
+            &-see-more-btn {
+                display: inline-block;
+                color: $primary;
+                position: relative;
+                margin: 0 0 0 30px;
+                transform: scaleY(0);
+                transform-origin: bottom center;
+                transition: all 0.3s ease;
+                &::before {
+                    position: absolute;
+                    content: "";
+                    height: 2px;
+                    width: 20px;
+                    background: $primary;
+                    top: 50%;
+                    left: -30px;
+                    transform: translateY(-50%);
+                }
+                @include tablet {
+                    transform: scaleY(1);
+                }
+            }
         }
         .slick-list {
             overflow: hidden;
