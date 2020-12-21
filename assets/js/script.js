@@ -85,10 +85,10 @@ $(document).ready(function () {
   // service slider
   $(".service__slider").slick({
     infinite: false,
-    slidesToShow: 2,
-    slidesToScroll: 2,
-    dots: true,
-    arrows: true,
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    dots: false,
+    arrows: false,
     responsive: [
       {
         breakpoint: 992,

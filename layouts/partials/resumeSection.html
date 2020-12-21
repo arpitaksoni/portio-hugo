@@ -23,7 +23,6 @@
                         {{ $Section := .education }}
                         {{ range $Section }}
                         <div class="resume__education_item">
-                            <span class="pre-line text-primary"> {{ .time }} </span>
                             {{ .content | markdownify }}
                         </div>
                         {{ end }}
@@ -34,7 +33,6 @@
                         {{ $Section := .experience }}
                         {{ range $Section }}
                         <div class="resume__education_item">
-                            <span class="pre-line text-primary"> {{ .time }} </span>
                             {{ .content | markdownify }}
                         </div>
                         {{ end }}
