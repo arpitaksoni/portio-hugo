@@ -4,13 +4,28 @@
       position: relative;
       z-index: 0;
       left: -30px;
+      top: 20px;
       width: 100%;
     }
-    .box-text {
+    .box-head {
         position: absolute;
+        top: 0px;
         left: 10px;
-        top: -10px;
+        right: 0px;
         z-index: 1;
     }
+
+    .box-text {
+        position: absolute;
+        left: 25px;
+        top:  55px;
+        width: 70%;
+        z-index: 1;
+    }
+
+    ul {
+        font-weight: bold;
+    }
+
   }
 }
