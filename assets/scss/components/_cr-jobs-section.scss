@@ -1,0 +1,16 @@
+.cr-jobs {
+  &__box {
+    .box-background {
+      position: relative;
+      z-index: 0;
+      left: -30px;
+      width: 100%;
+    }
+    .box-text {
+        position: absolute;
+        left: 10px;
+        top: -10px;
+        z-index: 1;
+    }
+  }
+}

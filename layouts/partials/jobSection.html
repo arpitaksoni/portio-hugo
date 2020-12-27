@@ -1,49 +1,115 @@
 {{ with .Site.Data.jobSection }}
 {{ if .enable }}
+
 <section class="section blog-preview" id="jobs">
 	<div class="blog-preview__shape">
 		<img src="images/blog/blog-shape.svg" alt="blog shape" />
 	</div>
 	<div class="container">
-		<div class="row mb-5">
-			<div class="col-lg-10">
+		
+    <div class="row mb-4">
+			<div class="col-lg-9">
 				<div class="blog-preview__header">
 					<span class="top-title">{{ .topTitle }}</span>
-					{{ .title | markdownify }}
+					{{ .title | markdownify}}
 				</div>
 			</div>
-			<div class="offset-lg-6 col-lg-6">
-				<div class="blog-preview__header_button desktop">
+			<div class="col-lg-3 centered">
+				<div class="blog-preview__header_button desktop centered">
 					<a class="btn btn-outline-secondary  btn-zoom m-3" href="{{ .buttonTarget | absURL }}">See all Jobs</a>
 				</div>
 			</div>
+    </div>
+
+
+      <div class="row">
+        <div class="col-lg-4 col-xs-4">
+          <div class="cr-jobs__box">
+            <div class="box-background">
+              <svg xmlns="http://www.w3.org/2000/svg" width="100%"
+                  viewBox="0 0 122.457 109.702">
+                  <path fill="#ECF7FF"
+                      d="M49.855527 9.984102c-4.337424-.815024-8.766002-1.633779-13.152776-1.113889-8.196034.975107-15.344329 6.696991-19.41555 13.879649s-5.363288 15.655094-5.187042 23.907191c.156996 7.385448 1.479849 14.875357 4.972905 21.38465s9.337384 11.961229 16.458344 13.922244c4.833752 1.331211 10.056683 1.044827 14.74081 2.829827 7.560693 2.881382 12.209757 10.489626 19.01235 14.870016a25.650039 25.650039 0 0024.16316 1.698928c8.342551-3.846451 14.03857-12.107291 16.641338-20.918947s2.471077-18.187687 1.756125-27.346305c-.843101-10.912846-3.01686-22.783019-11.354287-29.869462-6.037066-5.130853-14.208558-6.772976-21.995428-8.235353z"
+                      data-name="Path 1354"/>
+              </svg>
+            </div>
+            <div class="box-text">
+              <h3>Candidates Expectations for</h3>
+              <ul>
+                <li><strong>Choice of Department</strong></li>
+                <li><strong>Financial, Designation, <br>Skill Growth</strong></li>
+                <li><strong>Job Security and Location</strong></li>
+                <li><strong>Work culture</strong></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-xs-4">
+          <div class="cr-jobs__box">
+            <div class="box-background">
+              <svg xmlns="http://www.w3.org/2000/svg" width="100%"
+                      viewBox="0 0 122.457 109.702">
+                      <path fill="#1B2031FF"
+                          d="M49.855527 9.984102c-4.337424-.815024-8.766002-1.633779-13.152776-1.113889-8.196034.975107-15.344329 6.696991-19.41555 13.879649s-5.363288 15.655094-5.187042 23.907191c.156996 7.385448 1.479849 14.875357 4.972905 21.38465s9.337384 11.961229 16.458344 13.922244c4.833752 1.331211 10.056683 1.044827 14.74081 2.829827 7.560693 2.881382 12.209757 10.489626 19.01235 14.870016a25.650039 25.650039 0 0024.16316 1.698928c8.342551-3.846451 14.03857-12.107291 16.641338-20.918947s2.471077-18.187687 1.756125-27.346305c-.843101-10.912846-3.01686-22.783019-11.354287-29.869462-6.037066-5.130853-14.208558-6.772976-21.995428-8.235353z"
+                          data-name="Path 1354"/>
+              </svg>
+            </div>
+            <div class="box-text">
+              <h3>By</h3>
+              <ul>
+                <li><strong>Job Analysis</strong></li>
+                <li><strong>Mentoring and Advising</strong></li>
+                <li><strong>Finding “The Right Fit”</strong></li>
+                <li><strong>Mock Interviews”</strong></li>
+                <li><strong>Referrals and <br>Recommendations</strong></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-xs-4">
+          <div class="cr-jobs__box">
+            <div class="box-background">
+              <svg xmlns="http://www.w3.org/2000/svg" width="100%"
+                      viewBox="0 0 122.457 109.702">
+                      <path fill="#E5EFF3F0"
+                          d="M49.855527 9.984102c-4.337424-.815024-8.766002-1.633779-13.152776-1.113889-8.196034.975107-15.344329 6.696991-19.41555 13.879649s-5.363288 15.655094-5.187042 23.907191c.156996 7.385448 1.479849 14.875357 4.972905 21.38465s9.337384 11.961229 16.458344 13.922244c4.833752 1.331211 10.056683 1.044827 14.74081 2.829827 7.560693 2.881382 12.209757 10.489626 19.01235 14.870016a25.650039 25.650039 0 0024.16316 1.698928c8.342551-3.846451 14.03857-12.107291 16.641338-20.918947s2.471077-18.187687 1.756125-27.346305c-.843101-10.912846-3.01686-22.783019-11.354287-29.869462-6.037066-5.130853-14.208558-6.772976-21.995428-8.235353z"
+                          data-name="Path 1354" />
+              </svg>
+            </div>
+            <div class="box-text" color="#356173">
+              <h3>Companies Job requirements </h3>
+              <ul>
+               <li><strong>X factor with competency</strong></li>
+               <li><strong>Work Attitude</strong></li>
+               <li><strong>Productivity</strong></li>
+               <li><strong>Cost-To-Company</strong></li>
+               <li><strong>Teamwork and Synergy</strong></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--
+      <div class="row mb-5">
+        <div class="col-lg-12 col-md-12">
+          <img src="images/cr-jobs.png" alt="figure-cf-jobs">
+        </div>
+      </div>
+      -->
 		</div>
 
+    <!--
 		<div class="row">
-			{{ range first 3 (where $.Site.RegularPages "Type" "jobs") }}
-			<div class="col-lg-4">
-				<div class="blog-preview__item">
-					<div class="blog-preview__item-thumb">
-						<img src="{{ .Params.featureImage | absURL }}" alt="post-image">
-					</div>
-					<div class="blog-preview__item-content bg-white">
-						<span class="small">{{ .PublishDate.Format "January 2, 2006" }}</span>
-						<h5 class="mb-0">
-							<a class="text-dark" href="{{ .Permalink }}">{{ .Title }}</a>
-						</h5>
-					</div>
-				</div>
-			</div>
-			{{ end }}
-
-		</div>
-		<div class="row">
-			<div class="col-lg-12">
+			<div class="col-lg-12 col-xs-12 col-md-12">
 				<div class="blog-preview__header_button mobile">
-					<a class="btn btn-outline-secondary btn-zoom" href="{{ .buttonTarget | absURL }}">See all post</a>
+					<a class="btn btn-outline-secondary btn-zoom" href="{{ .buttonTarget | absURL }}">See all Jobs</a>
 				</div>
 			</div>
 		</div>
+    -->
 	</div>
 </section>
 {{ end }} {{ end }}
