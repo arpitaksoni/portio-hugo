@@ -26,16 +26,17 @@
 						<span>Contact Me</span>
 						<h3 class="mb-2">To know more about my CR Programs and Practices </h3>
 					</div>
-					<div class="footer__cta_action">
-						<a class="btn btn-light btn-zoom" href="{{ .Site.Params.contactLink | absURL }}">Get in
-							touch</a>
+					<div class="footer__cta_action mb-4">
+						<a class="btn btn-light btn-zoom" href="{{ .Site.Params.contactLink | absURL }}">Get in touch</a>
 					</div>
+					<div class="text-light footer__cta_content mt-1 mb-0">
 						{{ $social := .Site.Params.social }}
 						{{ range $social }}
-						<li class="d-inline-block mx-2"><a class="text-light" target="_blank" href="{{ .url }}"><i
-									class="fa {{ .icon }}" style="font-size:45px"></i></a>
+						<li class="d-inline-block mx-2"><a class="text-light" target="_blank" href="{{ .url }}">
+                <i class="fa {{ .icon }}" style="font-size:45px"></i></a>
 						</li>
 						{{ end }}
+					</div>
 				</div>
 			</div>
 		</div>
