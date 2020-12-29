@@ -21,8 +21,18 @@
                     {{ $section := .testimonial }}
                     {{ range $section }}
                     <div class="testimonial__slider_item">
-                        <p class="testimonial__slider_item-content"> {{ .comment | markdownify }} </p>
-                        <a class="testimonial__slider_item-author" href="{{ .name }}"><span>{{ .name }}</span></a>
+                        <p class="testimonial__slider_item-content"> {{ .comment | markdownify }} 
+                        <a href="{{ .webpage }}"><span>Cont...</span>
+                          </a>
+                        </p>
+                        <div class="testimonial__slider_item-author">
+                          <a href="{{ .webpage }}"><span>{{ .name }}</span>
+                          </a>
+                          {{  .designation  }}
+                        </div>
+                        <div class="testimonial__slider_item-company">
+                          {{  .company  }}
+                        </div>
                     </div>
                     {{ end }}
                 </div>

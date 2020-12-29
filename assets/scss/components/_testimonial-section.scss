@@ -49,16 +49,24 @@
         margin: 0 0 40px 0;
         line-height: 35px;
       }
+      &-company {
+        font-size: 20px;
+        position: relative;
+        font-weight: bold;
+        color: #7e7e8a;
+      }
+
       &-author {
         margin: 0 0 0 35px;
         color: #7e7e8a;
-        font-size: 16px;
+        font-size: 20px;
         line-height: 1;
         position: relative;
         span {
           font-weight: bold;
           color: #282f49;
         }
+
         &:before {
           position: absolute;
           content: "";
@@ -70,6 +78,7 @@
           background: #282f49;
         }
       }
+
     }
     .slick-dots {
       display: flex;
